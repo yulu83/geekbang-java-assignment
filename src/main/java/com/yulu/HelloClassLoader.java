@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 
 public class HelloClassLoader extends ClassLoader {
 
-    public static void main(String[] args) throws Throwable {
+    public static void main(String[] args) throws Exception {
         HelloClassLoader classLoader = new HelloClassLoader();
         Class<?> klass = classLoader.findClass("Hello");
         Method helloMethod = klass.getDeclaredMethod("hello");
